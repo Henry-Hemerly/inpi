@@ -8,8 +8,8 @@ New system logic implemented to support prefix and suffix searches.
   
 Tech Stack:
  
- -SQL
- -MySQL
- -Java
+Java
+SQL
+MySQL
   
   

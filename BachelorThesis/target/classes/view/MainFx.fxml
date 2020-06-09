@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainFxController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="marcasTable" layoutX="1.0" layoutY="7.0" prefHeight="593.0" prefWidth="499.0">
+              <columns>
+                <TableColumn fx:id="marcasColumn" prefWidth="496.0" text="Marcas" />
+              </columns>
+            </TableView>
+            <TextField fx:id="marcaSearch" layoutX="506.0" layoutY="23.0" prefHeight="25.0" prefWidth="218.0" promptText="Busca" />
+            <TextField fx:id="specialSearch" layoutX="506.0" layoutY="52.0" prefHeight="25.0" prefWidth="218.0" promptText="Busca por caracteres sequenciais" />
+            <Button fx:id="searchBtn" layoutX="728.0" layoutY="23.0" mnemonicParsing="false" onAction="#searchMarcasHandler" prefHeight="55.0" prefWidth="90.0" text="Buscar" />
+            <Button fx:id="reloadBtn" layoutX="591.0" layoutY="561.0" mnemonicParsing="false" onAction="#reloadHandler" prefHeight="25.0" prefWidth="133.0" text="Recarregar" />            
+            <TextField fx:id="preSearch" layoutX="506.0" layoutY="81.0" prefHeight="25.0" prefWidth="218.0" promptText="Busca por prefixo" />
+            <TextField fx:id="postSearch" layoutX="506.0" layoutY="110.0" prefHeight="25.0" prefWidth="218.0" promptText="Busca por sufixo" />
+            <Button fx:id="searchTwoLol" layoutX="728.0" layoutY="81.0" mnemonicParsing="false" onAction="#searchFixHandler" prefHeight="55.0" prefWidth="90" text="(P)Buscar(S)" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
